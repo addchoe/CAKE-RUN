@@ -1,32 +1,30 @@
-# 빌드 / 검증 결과
+# 제출용 release 검증 결과
 
-검증일: 2026-11-15 (Asia/Seoul).
+검증일: 2026-11-15 (Asia/Seoul)
+팀: 가도니와 애준이 / 앱: 중요한 건 흔들리지 않는 마음 / 버전: 0.2.0 (2)
 
-## 완료한 검증
+## 완료
 
-- JDK 17.0.21, Gradle 8.9, AGP 8.7.3, Kotlin 2.0.21, Android SDK 35로 두 변형 빌드 성공.
-- `assembleSimDebug`: 성공. 공식 SDK 없이 실행하도록 패키징된 기본 데모.
-- `assemblePleosDebug`: 성공. 공식 Maven의 Vehicle 2.3.2 / NaviHelper 3.0.5를 실제로 해석·컴파일·패키징. 가짜 SDK stubs를 사용하지 않음.
-- `testSimDebugUnitTest`: **5개 통과, 실패 0, 오류 0**.
-- `lintSimDebug` / `lintPleosDebug`: 각각 **오류 0, 경고 3**, 검사 성공. API 34 대상 및 가로 고정 화면 경고 등은 개발용 차량 화면 설정과 관련됨. 상세 경고는 원본 보고서 참고.
-- 두 최종 APK의 `apksigner verify`: 성공, APK v2 서명 확인. 개발용 debug 서명이며 배포용 릴리즈 키/키 로테이션 설정을 대신하지 않음.
-- APK 메타데이터에서 minSdk 28, targetSdk 34, 메인 Activity 및 시뮬레이션 패키지 이름 확인.
+- `assemblePleosRelease`, `assembleSimRelease`: 성공. 실제 release 빌드 결과물이며 기존 debug 파일을 이름만 바꾸지 않았습니다.
+- `testSimReleaseUnitTest`: 5개 통과, 실패 0, 오류 0.
+- `lintPleosRelease`, `lintSimRelease`: 각각 오류 0, 경고 3. 경고는 target API 34, 가로 화면 고정, 구형 Android 백업 설정 안내입니다.
+- 두 APK의 `apksigner verify --verbose --print-certs`: 성공. API 28 이상에서 APK v3 서명 검증을 통과했습니다. 3072-bit RSA 제출용 키를 사용했고 Android Debug 인증서가 아님을 확인했습니다.
+- 두 APK의 패키지 메타데이터: `application-debuggable` 없음, 앱 이름 `중요한 건 흔들리지 않는 마음`, minSdk 28 / targetSdk 34 확인.
+- 공식 Maven SDK: Vehicle 2.3.2 / NaviHelper 3.0.5 실제 컴파일·패키징. 가짜 SDK stubs를 사용하지 않았습니다.
+- 최종 APK SHA-256 체크섬을 `apk/SHA256SUMS.txt`에 기록했습니다.
 
-검증 명령:
+테스트는 부드러운 배송의 무손상 종료, 급이벤트 중복 카운트 방지, 비정상 입력 무시·손상 상한, 결과 고정·재시작 초기화, 시나리오별 점수 차이를 검증합니다.
 
-```sh
-./gradlew :app:assembleSimDebug :app:assemblePleosDebug \
-  :app:testSimDebugUnitTest :app:lintSimDebug :app:lintPleosDebug
-```
+실행 환경: JDK 17.0.21 / Kotlin 2.0.21 / Gradle 8.9 / AGP 8.7.3 / Android SDK 및 Build Tools 35.
 
-테스트한 동작: 부드러운 배송의 무손상 종료, 급이벤트의 지속시간 중 중복 카운트 방지와 재진입 카운트, 비정상 입력 무시 및 손상 상한, 결과 고정 및 재시작 초기화, 거친 주행과 부드러운 주행의 점수 차이.
+## 아직 실행하지 않은 항목
 
-## 실행하지 않은 검증
+**Android 기기 또는 Pleos Connect Emulator에서 앱을 직접 실행한 검증은 아직 없습니다.** 실제 화면 렌더링, SDK 권한, Vehicle/Navi 서비스 연결, Virtual Console 입력, 내비 도착 콜백은 별도 수동 확인이 필요합니다.
 
-이 환경에는 기존 Android Studio/AVD가 없었습니다. 빌드용 JDK·SDK는 작업 폴더에 준비했지만, **Android 기기나 Pleos Emulator에서 앱을 직접 실행한 검증은 하지 않았습니다.** 화면의 실제 렌더링, SDK 권한 부여, Vehicle Service/Navi Service 연결, Virtual Console 및 실제 도착 콜백은 에뮬레이터에서 수동 확인이 필요합니다.
+대상은 Pleos Connect Emulator v2.1.0 / API 34 / 가로 화면입니다. 참고 화면 1280×720px는 향후 수동 검증 기준이며 실제 사용한 AVD 해상도를 의미하지 않습니다. 실차 검증, 운전 중 사용 승인, Pleos App Market 심사 통과도 주장하지 않습니다.
 
-이 결과는 빌드/공개 API 서명/게임 로직 검증이며, 실차 테스트나 Pleos App Market 심사 통과를 의미하지 않습니다. Android Studio의 시각적 미리보기용 화면은 별도로 만들지 않았으며, 실제 화면은 Kotlin에서 생성됩니다.
+## 근거
 
-## 근거 파일
+`verification/release-build.txt`, `unit-tests-release.xml`, `lint-pleos-release.txt`, `lint-sim-release.txt`, `signature-*-release.txt`, `metadata-*-release.txt`에 원본 결과를 포함했습니다. 호스트의 개인 경로와 장치 이름은 치환했습니다. 이전 0.1.0 debug 검사 파일은 과거 개발 이력이며 현재 제출물의 근거는 `release`가 붙은 파일입니다.
 
-`verification/`에 최종 빌드 로그, 테스트 XML, 두 lint 텍스트 보고서, APK 서명 검증 결과를 포함했습니다. 소스 ZIP에는 Gradle wrapper와 문서를 포함하며 로컬 SDK, 개발 키, 빌드 캐시, 공식 SDK 바이너리는 포함하지 않습니다.
+서명키와 비밀번호는 로컬에서만 보관하며 저장소와 제출물 ZIP에 포함하지 않습니다.

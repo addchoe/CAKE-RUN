@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): false
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=Unshaken Heart, OU=Competition, O=Gadoni and Aejuni, C=KR
+Signer #1 certificate SHA-256 digest: 5bf40dd1097f308719a47e983bdbf8277d77b6e013c76a21ce51d3df4dc504d2
+Signer #1 certificate SHA-1 digest: f612784ef96bfebf4552276d434804d71e9553c8
+Signer #1 certificate MD5 digest: 22a87db0b7841d79d5068b81805e6cf5
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 3072
+Signer #1 public key SHA-256 digest: 9515d0102a4f49627cf0f6cb9b5594f5cc9a9658ddaa1554c7e10b757f082c15
+Signer #1 public key SHA-1 digest: a3a2dfff4f17724d39e1d4b64e7c51aeaa0ed0be
+Signer #1 public key MD5 digest: 99e245c83e8f4a9a59e1bd946ed2d8e4

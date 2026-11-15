@@ -70,7 +70,7 @@ class MainActivity: Activity() {
         root=LinearLayout(this).apply { orientation=LinearLayout.VERTICAL; setPadding(dp(28),dp(14),dp(28),dp(14)); setBackgroundColor(Color.parseColor("#172C28")) }
         setContentView(root)
         val header=LinearLayout(this).apply { gravity=Gravity.CENTER_VERTICAL }
-        header.addView(label("CAKE RUN",26f).apply { typeface=Typeface.DEFAULT_BOLD },LinearLayout.LayoutParams(0,-2,1f))
+        header.addView(label("중요한 건 흔들리지 않는 마음",20f).apply { typeface=Typeface.DEFAULT_BOLD },LinearLayout.LayoutParams(0,-2,1f))
         header.addView(label(when(mission.stage) { Stage.DECORATE -> "01  PREPARE"; Stage.DELIVERY -> "02  ON THE ROAD"; Stage.RESULT -> "03  DELIVERED" },14f,muted))
         root.addView(header)
         status=label(sourceStatus,12f,coral); root.addView(status)

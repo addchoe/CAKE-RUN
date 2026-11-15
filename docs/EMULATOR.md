@@ -56,3 +56,7 @@ adb shell am start -n com.cakerun.app/com.cakerun.app.MainActivity
 - `JAVA_HOME` 오류: Gradle JDK 17 선택.
 - Console 접속 실패: AVD v2.1.0 이상, `adb devices`, 포트 중복, forward 재설정을 확인.
 - 브레이크 미지원/권한 오류: 상단 오류가 표시되는 것이 정상 fallback 동작. 실제 차량 모델명으로 지원 여부를 추측하지 않습니다.
+
+## 공모전 제출용 APK
+
+0.2.0부터 제출 APK는 별도 release 서명을 사용합니다. README의 `apk/` 경로를 우선 참고하세요. 이 문서의 debug 빌드 명령은 소스 개발 시의 실행 예시입니다. 위 에뮬레이터 설치 절차는 실행 완료 기록이 아닙니다. 실제 AVD 검증 상태는 `VALIDATION.md`를 참고하세요.

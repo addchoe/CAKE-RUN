@@ -1,0 +1,150 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.9/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build
+
+> Configure project :app
+Unable to initialize metrics, ensure <android-user-home> is writable, details: <android-user-home>/analytics.settings (Operation not permitted)
+
+> Task :app:buildKotlinToolingMetadata
+Caught exception: Could not start the FSEvents stream: <project>
+
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:prePleosReleaseBuild UP-TO-DATE
+> Task :app:generatePleosReleaseResValues
+> Task :app:checkPleosReleaseAarMetadata
+> Task :app:mapPleosReleaseSourceSetPaths
+> Task :app:generatePleosReleaseResources
+> Task :app:packagePleosReleaseResources
+> Task :app:mergePleosReleaseResources
+> Task :app:createPleosReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksPleosRelease
+> Task :app:parsePleosReleaseLocalResources
+> Task :app:processPleosReleaseMainManifest
+> Task :app:processPleosReleaseManifest
+> Task :app:javaPreCompilePleosRelease
+> Task :app:extractProguardFiles
+> Task :app:mergePleosReleaseJniLibFolders
+> Task :app:mergePleosReleaseNativeLibs NO-SOURCE
+> Task :app:stripPleosReleaseDebugSymbols NO-SOURCE
+> Task :app:extractPleosReleaseNativeSymbolTables NO-SOURCE
+> Task :app:mergePleosReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:desugarPleosReleaseFileDependencies
+> Task :app:mergePleosReleaseStartupProfile
+> Task :app:checkPleosReleaseDuplicateClasses
+> Task :app:mergePleosReleaseArtProfile
+> Task :app:mergePleosReleaseShaders
+> Task :app:compilePleosReleaseShaders NO-SOURCE
+> Task :app:generatePleosReleaseAssets UP-TO-DATE
+> Task :app:mergePleosReleaseAssets
+> Task :app:compressPleosReleaseAssets
+> Task :app:processPleosReleaseManifestForPackage
+> Task :app:extractPleosReleaseVersionControlInfo
+> Task :app:collectPleosReleaseDependencies
+> Task :app:processPleosReleaseResources
+> Task :app:sdkPleosReleaseDependencyData
+> Task :app:validateSigningPleosRelease
+> Task :app:writePleosReleaseAppMetadata
+> Task :app:writePleosReleaseSigningConfigVersions
+> Task :app:preSimReleaseBuild UP-TO-DATE
+> Task :app:checkSimReleaseAarMetadata
+> Task :app:generateSimReleaseResValues
+> Task :app:mapSimReleaseSourceSetPaths
+> Task :app:generateSimReleaseResources
+> Task :app:mergeSimReleaseResources
+> Task :app:packageSimReleaseResources
+> Task :app:createSimReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksSimRelease
+> Task :app:parseSimReleaseLocalResources
+> Task :app:processSimReleaseMainManifest
+> Task :app:processSimReleaseManifest
+> Task :app:javaPreCompileSimRelease
+> Task :app:mergeSimReleaseJniLibFolders
+> Task :app:mergeSimReleaseNativeLibs NO-SOURCE
+> Task :app:stripSimReleaseDebugSymbols NO-SOURCE
+> Task :app:extractSimReleaseNativeSymbolTables NO-SOURCE
+> Task :app:mergeSimReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:checkSimReleaseDuplicateClasses
+> Task :app:desugarSimReleaseFileDependencies
+> Task :app:mergeSimReleaseStartupProfile
+> Task :app:mergeSimReleaseArtProfile
+> Task :app:mergeSimReleaseShaders
+> Task :app:compileSimReleaseShaders NO-SOURCE
+> Task :app:generateSimReleaseAssets UP-TO-DATE
+> Task :app:mergeSimReleaseAssets
+> Task :app:compressSimReleaseAssets
+> Task :app:extractSimReleaseVersionControlInfo
+> Task :app:collectSimReleaseDependencies
+> Task :app:sdkSimReleaseDependencyData
+> Task :app:validateSigningSimRelease
+> Task :app:writeSimReleaseAppMetadata
+> Task :app:writeSimReleaseSigningConfigVersions
+> Task :app:preSimReleaseUnitTestBuild UP-TO-DATE
+> Task :app:prePleosReleaseUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileSimReleaseUnitTest
+> Task :app:optimizePleosReleaseResources
+> Task :app:processSimReleaseManifestForPackage
+> Task :app:processSimReleaseResources
+> Task :app:mergeExtDexSimRelease
+> Task :app:mergeExtDexPleosRelease
+> Task :app:optimizeSimReleaseResources
+> Task :app:compilePleosReleaseKotlin
+> Task :app:compileSimReleaseKotlin
+> Task :app:compilePleosReleaseJavaWithJavac NO-SOURCE
+> Task :app:generatePleosReleaseLintVitalReportModel
+> Task :app:dexBuilderPleosRelease
+> Task :app:mergePleosReleaseGlobalSynthetics
+> Task :app:processPleosReleaseJavaRes
+> Task :app:compileSimReleaseJavaWithJavac NO-SOURCE
+> Task :app:generateSimReleaseLintVitalReportModel
+> Task :app:dexBuilderSimRelease
+> Task :app:mergeSimReleaseGlobalSynthetics
+> Task :app:processSimReleaseJavaRes
+> Task :app:bundleSimReleaseClassesToRuntimeJar
+> Task :app:bundleSimReleaseClassesToCompileJar
+> Task :app:generatePleosReleaseLintReportModel
+> Task :app:mergeSimReleaseJavaResource
+> Task :app:bundlePleosReleaseClassesToCompileJar
+> Task :app:mergePleosReleaseJavaResource
+> Task :app:generatePleosReleaseUnitTestLintModel
+> Task :app:generateSimReleaseLintReportModel
+> Task :app:generateSimReleaseUnitTestLintModel
+> Task :app:mergeDexSimRelease
+> Task :app:compileSimReleaseArtProfile
+> Task :app:packageSimRelease
+> Task :app:createSimReleaseApkListingFileRedirect
+> Task :app:compileSimReleaseUnitTestKotlin
+> Task :app:compileSimReleaseUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processSimReleaseUnitTestJavaRes
+> Task :app:mergeDexPleosRelease
+> Task :app:testSimReleaseUnitTest
+> Task :app:compilePleosReleaseArtProfile
+> Task :app:packagePleosRelease
+> Task :app:createPleosReleaseApkListingFileRedirect
+> Task :app:lintVitalAnalyzePleosRelease
+
+> Task :app:lintVitalAnalyzeSimRelease
+Warning: Unable to initialize metrics, ensure <android-user-home> is writable, details: <android-user-home>/analytics.settings (Operation not permitted)
+
+> Task :app:lintVitalReportPleosRelease SKIPPED
+> Task :app:lintVitalPleosRelease SKIPPED
+> Task :app:assemblePleosRelease
+> Task :app:lintVitalReportSimRelease SKIPPED
+> Task :app:lintVitalSimRelease SKIPPED
+> Task :app:assembleSimRelease
+> Task :app:lintAnalyzePleosReleaseUnitTest
+> Task :app:lintAnalyzeSimReleaseUnitTest
+> Task :app:lintAnalyzePleosRelease
+
+> Task :app:lintReportPleosRelease
+Wrote HTML report to file://<project>/app/build/reports/lint-results-pleosRelease.html
+
+> Task :app:lintPleosRelease
+> Task :app:lintAnalyzeSimRelease
+
+> Task :app:lintReportSimRelease
+Wrote HTML report to file://<project>/app/build/reports/lint-results-simRelease.html
+
+> Task :app:lintSimRelease
+
+BUILD SUCCESSFUL in 22s
+103 actionable tasks: 103 executed
