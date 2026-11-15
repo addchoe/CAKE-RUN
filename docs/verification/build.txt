@@ -1,0 +1,136 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.9/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build
+
+> Configure project :app
+Unable to initialize metrics, ensure <android-user-home> is writable, details: <android-user-home>/analytics.settings (Operation not permitted)
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preSimDebugBuild UP-TO-DATE
+> Task :app:mergeSimDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+
+> Task :app:checkSimDebugAarMetadata UP-TO-DATE
+Caught exception: Could not start the FSEvents stream: <project>
+
+> Task :app:generateSimDebugResValues UP-TO-DATE
+> Task :app:mapSimDebugSourceSetPaths
+> Task :app:generateSimDebugResources
+> Task :app:packageSimDebugResources
+> Task :app:createSimDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksSimDebug UP-TO-DATE
+> Task :app:mergeSimDebugResources
+> Task :app:parseSimDebugLocalResources
+> Task :app:processSimDebugMainManifest
+> Task :app:processSimDebugManifest
+> Task :app:javaPreCompileSimDebug UP-TO-DATE
+> Task :app:mergeSimDebugShaders UP-TO-DATE
+> Task :app:compileSimDebugShaders NO-SOURCE
+> Task :app:generateSimDebugAssets UP-TO-DATE
+> Task :app:mergeSimDebugAssets UP-TO-DATE
+> Task :app:compressSimDebugAssets UP-TO-DATE
+> Task :app:checkSimDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarSimDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexSimDebug UP-TO-DATE
+> Task :app:mergeLibDexSimDebug UP-TO-DATE
+> Task :app:mergeSimDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeSimDebugNativeLibs NO-SOURCE
+> Task :app:stripSimDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningSimDebug UP-TO-DATE
+> Task :app:writeSimDebugAppMetadata UP-TO-DATE
+> Task :app:writeSimDebugSigningConfigVersions UP-TO-DATE
+> Task :app:prePleosDebugBuild UP-TO-DATE
+> Task :app:mergePleosDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkPleosDebugAarMetadata UP-TO-DATE
+> Task :app:generatePleosDebugResValues UP-TO-DATE
+> Task :app:mapPleosDebugSourceSetPaths
+> Task :app:generatePleosDebugResources
+> Task :app:processSimDebugManifestForPackage
+> Task :app:mergePleosDebugResources
+> Task :app:packagePleosDebugResources
+> Task :app:createPleosDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksPleosDebug UP-TO-DATE
+> Task :app:parsePleosDebugLocalResources
+> Task :app:processPleosDebugMainManifest
+> Task :app:processPleosDebugManifest
+> Task :app:javaPreCompilePleosDebug UP-TO-DATE
+> Task :app:mergePleosDebugShaders UP-TO-DATE
+> Task :app:compilePleosDebugShaders NO-SOURCE
+> Task :app:generatePleosDebugAssets UP-TO-DATE
+> Task :app:mergePleosDebugAssets UP-TO-DATE
+> Task :app:compressPleosDebugAssets UP-TO-DATE
+> Task :app:checkPleosDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarPleosDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexPleosDebug UP-TO-DATE
+> Task :app:mergeLibDexPleosDebug UP-TO-DATE
+> Task :app:mergePleosDebugJniLibFolders UP-TO-DATE
+> Task :app:mergePleosDebugNativeLibs NO-SOURCE
+> Task :app:stripPleosDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningPleosDebug UP-TO-DATE
+> Task :app:writePleosDebugAppMetadata UP-TO-DATE
+> Task :app:writePleosDebugSigningConfigVersions UP-TO-DATE
+> Task :app:preSimDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileSimDebugUnitTest UP-TO-DATE
+> Task :app:preSimDebugAndroidTestBuild SKIPPED
+> Task :app:generateSimDebugAndroidTestResValues UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:prePleosDebugAndroidTestBuild SKIPPED
+> Task :app:generatePleosDebugAndroidTestResValues
+> Task :app:prePleosDebugUnitTestBuild UP-TO-DATE
+> Task :app:processPleosDebugManifestForPackage
+> Task :app:processSimDebugResources
+> Task :app:processPleosDebugResources
+> Task :app:compileSimDebugKotlin
+> Task :app:compilePleosDebugKotlin
+> Task :app:compileSimDebugJavaWithJavac NO-SOURCE
+> Task :app:dexBuilderSimDebug
+> Task :app:mergeSimDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processSimDebugJavaRes UP-TO-DATE
+> Task :app:mergeSimDebugJavaResource UP-TO-DATE
+> Task :app:compilePleosDebugJavaWithJavac NO-SOURCE
+> Task :app:dexBuilderPleosDebug
+> Task :app:mergePleosDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processPleosDebugJavaRes UP-TO-DATE
+> Task :app:mergeProjectDexSimDebug
+> Task :app:mergePleosDebugJavaResource UP-TO-DATE
+> Task :app:bundleSimDebugClassesToRuntimeJar
+> Task :app:bundleSimDebugClassesToCompileJar
+> Task :app:mergeProjectDexPleosDebug
+> Task :app:generateSimDebugLintReportModel
+> Task :app:generateSimDebugAndroidTestLintModel
+> Task :app:generateSimDebugUnitTestLintModel
+> Task :app:packageSimDebug
+> Task :app:createSimDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:assembleSimDebug
+> Task :app:bundlePleosDebugClassesToCompileJar
+> Task :app:compileSimDebugUnitTestKotlin
+> Task :app:generatePleosDebugLintReportModel
+> Task :app:compileSimDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processSimDebugUnitTestJavaRes UP-TO-DATE
+> Task :app:testSimDebugUnitTest
+> Task :app:generatePleosDebugAndroidTestLintModel
+> Task :app:generatePleosDebugUnitTestLintModel
+> Task :app:packagePleosDebug
+> Task :app:createPleosDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:assemblePleosDebug
+
+> Task :app:lintAnalyzeSimDebugAndroidTest
+Warning: Unable to initialize metrics, ensure <android-user-home> is writable, details: <android-user-home>/analytics.settings (Operation not permitted)
+
+> Task :app:lintAnalyzeSimDebugUnitTest
+> Task :app:lintAnalyzePleosDebugAndroidTest
+> Task :app:lintAnalyzePleosDebugUnitTest
+> Task :app:lintAnalyzeSimDebug
+
+> Task :app:lintReportSimDebug
+Wrote HTML report to file://<project>/app/build/reports/lint-results-simDebug.html
+
+> Task :app:lintSimDebug
+> Task :app:lintAnalyzePleosDebug
+
+> Task :app:lintReportPleosDebug
+Wrote HTML report to file://<project>/app/build/reports/lint-results-pleosDebug.html
+
+> Task :app:lintPleosDebug
+
+BUILD SUCCESSFUL in 14s
+92 actionable tasks: 48 executed, 44 up-to-date
